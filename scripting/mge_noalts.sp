@@ -35,15 +35,7 @@ public Action MGE_OnPlayerArenaAdd(int client, int arena_index, int slot)
     if (Whois_IsLinkedAlt(steamid, mainSteamId, sizeof(mainSteamId), permaname, sizeof(permaname)))
     {
         PrintToChat(client, "\x07FF6B6B[MGE]\x01 Alt accounts are not allowed to join arenas.");
-        if (strlen(permaname) > 0)
-        {
-            PrintToChat(client, "\x07FF6B6B[MGE]\x01 This account is linked to: %s", permaname);
-        }
-        else if (strlen(mainSteamId) > 0)
-        {
-            PrintToChat(client, "\x07FF6B6B[MGE]\x01 This account is linked to: %s", mainSteamId);
-        }
-        
+        PrintToChat(client, "\x07FF6B6B[MGE]\x01 This account is linked to: %s (%s)", permaname, mainSteamId);
         return Plugin_Stop;
     }
     
