@@ -10,7 +10,7 @@ public Plugin myinfo =
     name = "MGE - No Alts",
     author = "ampere",
     description = "Prevents alt accounts from joining MGE arenas",
-    version = "1.0",
+    version = "1.1",
     url = "github.com/maxijabase"
 };
 
